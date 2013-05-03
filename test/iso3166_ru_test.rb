@@ -4,7 +4,8 @@ require "minitest_helper"
 require "iso3166_ru"
 
 class Iso3166RuTest < Minitest::Unit::TestCase
-  RUSSIA = Iso3166Ru::Country.new("Россия", "Российская Федерация", "Russian Federation", "RU", "RUS", "643", "Европа", "Восточная Европа")
+  RUSSIA = Iso3166Ru::Country.new("Россия", "Российская Федерация", 
+    "Russian Federation", "RU", "RUS", "643", "Европа", "Восточная Европа")
 
   def test_find_by_alpha2
     assert_equal RUSSIA, Iso3166Ru.find_by(alpha2: "RU")
