@@ -20,7 +20,7 @@ class Iso3166RuTest < Minitest::Unit::TestCase
   end
 
   def test_find_by_full_name
-    assert_equal RUSSIA, Iso3166Ru.find_by(fullname: "Российская Федерация")
+    assert_equal RUSSIA, Iso3166Ru.find_by(full_name: "Российская Федерация")
   end
 
   def test_find_by_english

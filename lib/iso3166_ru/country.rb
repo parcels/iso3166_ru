@@ -1,5 +1,5 @@
 module Iso3166Ru
-  Country = Struct.new(:name, :fullname, :english, :alpha2, :alpha3, :iso,
+  Country = Struct.new(:name, :full_name, :english, :alpha2, :alpha3, :iso,
     :location, :location_precise)
 
   module CountryFactory
