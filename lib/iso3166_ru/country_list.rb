@@ -1,5 +1,4 @@
 require "iso3166_ru/country"
-require "pry"
 
 module Iso3166Ru
   class CountryList
