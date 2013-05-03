@@ -18,7 +18,7 @@ namespace :countries do
     raw_data  = doc.split("\n")[1..-1].map { |c| c.split("\t") }
     countries = raw_data.reduce([]) { |a, e| a << Iso3166Ru::CountryFactory.build(e) }
 
-    File.open(File.expand_path("../lib/iso3166_ru/data/countries.dat", __FILE__), "w") do |f|
+    File.open(File.expand_path("../lib/iso3166_ru/data.dat", __FILE__), "w") do |f|
       f.write Marshal.dump(countries)
     end
   end
