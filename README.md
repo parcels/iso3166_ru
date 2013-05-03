@@ -1,4 +1,4 @@
-# ISO 3166-1 Country List in Russian
+# ISO 3166-1 Country List in English and Russian
 
 ## Installation
 
