@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Iso3166Ru::VERSION
   spec.authors       = ["Artem Shitov"]
   spec.email         = ["inbox@artemshitov.ru"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Lets you find country names in English and Russian, based on country codes (and vice versa)}
+  spec.summary       = %q{ISO 3166-1 country list in English and Russian}
   spec.homepage      = ""
   spec.license       = "MIT"
 
