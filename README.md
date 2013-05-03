@@ -1,5 +1,7 @@
 # ISO 3166-1 Country List in English and Russian
 
+[![Build Status](https://travis-ci.org/artemshitov/iso3166_ru.png?branch=master)](https://travis-ci.org/artemshitov/iso3166_ru)[![Code Climate](https://codeclimate.com/github/artemshitov/iso3166_ru.png)](https://codeclimate.com/github/artemshitov/iso3166_ru)
+
 ## Installation
 
 Add this line to your application's Gemfile:
