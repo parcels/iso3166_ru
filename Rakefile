@@ -19,9 +19,10 @@ namespace :countries do
     countries = raw_data.reduce([]) { |a, e| a << Iso3166Ru::CountryFactory.build(e) }
     
     indexes   = Iso3166Ru::Country.members.reduce({}) { |a, e| a.merge(e => {}) }
+    a = []
     countries.each_with_index do |e, i|
-      indexes.each_key do |k|
-        indexes[k].merge(e[k].to_sym => i)
+      Iso3166Ru::Country.members.each do |k|
+        indexes[k] = indexes[k].merge({e[k] => i})
       end
     end
 
