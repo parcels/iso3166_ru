@@ -39,6 +39,8 @@ If you don't want to load country data for each request, you can initialize `Iso
     country_list.find_by(full_name: "Российская Федерация")
     country_list.find_by(english: "Russian Federation")
     country_list.find_by(iso: "643")
+    
+This chops away ~99.8% of execution time.
 
 All finders return an `Iso3166Ru::Country` struct.
 
