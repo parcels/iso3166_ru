@@ -2,15 +2,12 @@ require "iso3166_ru/country"
 
 module Iso3166Ru
   class CountryList
-    attr_reader :data, :countries, :indexes
+    attr_reader :countries, :indexes
 
     def initialize
       File.open(File.expand_path("../data.dat", __FILE__)) do |f|
-        @data = Marshal.load(f)
+        @countries, @indexes = Marshal.load(f)
       end
-
-      @countries = data[0]
-      @indexes   = data[1]
     end
 
     def find_by(query)
