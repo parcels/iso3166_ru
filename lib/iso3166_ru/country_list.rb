@@ -14,9 +14,18 @@ module Iso3166Ru
     end
 
     def find_by(query)
-      k = query.keys[0]
-      q = query[k]
-      countries[indexes[k][q]]
+      k, q = prepare_query(query)
+      countries[indexes[k][q]] rescue nil
+    end
+
+    
+    private
+
+    def prepare_query(query)
+      key = query.keys.first
+      value = key == :iso ? "%03d" % query[key].to_i : query[key]
+
+      [key, value]
     end
   end
 end
