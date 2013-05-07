@@ -22,8 +22,8 @@ module Iso3166Ru
     private
 
     def prepare_query(query)
-      key = query.keys.first
-      value = key == :iso ? "%03d" % query[key].to_i : query[key]
+      key, value = query.first
+      value = "%03d" % value.to_i if key == :iso
 
       [key, value]
     end
