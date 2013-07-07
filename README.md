@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-### Simple ActiveRecord-alike finders
+### Country finders
 
     Iso3166Ru.find_by(alpha2: "RU")
     Iso3166Ru.find_by(alpha3: "RUS")
