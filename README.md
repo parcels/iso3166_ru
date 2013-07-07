@@ -27,21 +27,6 @@ Or install it yourself as:
     Iso3166Ru.find_by(english: "Russian Federation")
     Iso3166Ru.find_by(iso: "643")
 
-### Performant finding
-
-If you don't want to load country data for each request, you can initialize `Iso3166Ru::CountryList` and use it:
-
-    country_list = Iso3166Ru::CountryList.new
-
-    country_list.find_by(alpha2: "RU")
-    country_list.find_by(alpha3: "RUS")
-    country_list.find_by(name: "Россия")
-    country_list.find_by(full_name: "Российская Федерация")
-    country_list.find_by(english: "Russian Federation")
-    country_list.find_by(iso: "643")
-    
-This chops away ~99.8% of execution time.
-
 All finders return an `Iso3166Ru::Country` struct.
 
 ### Country
