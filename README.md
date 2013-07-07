@@ -6,7 +6,7 @@
 
 Add this line to your application's Gemfile:
 
-    gem 'iso3166_ru'
+    gem 'iso3166_ru', '~> 0.2.0'
 
 And then execute:
 
