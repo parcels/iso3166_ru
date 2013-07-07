@@ -1,7 +1,10 @@
 require "iso3166_ru/country"
+require 'singleton'
 
 module Iso3166Ru
   class CountryList
+    include Singleton
+    
     attr_reader :countries, :indexes
 
     def initialize
